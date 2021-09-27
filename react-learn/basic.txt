@@ -1,0 +1,26 @@
+react js :
+
+it provides rich ui 
+
+use of react :
+
+component (core building blocks) based approach => functional , class (17.0.1) => 16.8
+
+declarative approach => that express the logic of a completion without describing the control flow.
+
+DOM updates handled. (virtual DOM)
+
+Reusable code 
+
+implenting speed increase
+
+installation of react js:-
+
+npx create-react-app react-learn
+
+node version => node -v (should be more than 8 )
+npm version => npm -v ( should be more than 5 )
+
+cd react-learn
+
+npm start
