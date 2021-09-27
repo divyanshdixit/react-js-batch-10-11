@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import FirstCompo from './FirsComponent';
 
+// jsx 
 function App() {
   return (
     <div className="App">
