@@ -1,8 +1,13 @@
+import React from "react";
+
 function FirstCompo(){
     return(
-        <>
-            <p> This is first react component</p>
-        </>
+        [
+            <div className="col-md-12">
+                <p> asdasd</p>
+            </div>,
+            <p>asdasd </p>
+        ]
     )
 }
 

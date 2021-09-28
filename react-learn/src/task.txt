@@ -1,0 +1,9 @@
+  //  how to use condition in template literals
+
+
+  // new Date()
+
+  local current date, local current time 
+
+  current time: 
+  current date:
