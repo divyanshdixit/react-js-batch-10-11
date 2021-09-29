@@ -7,6 +7,11 @@
   pointer-events: none;
 }
 
+.calc{
+  border:2px solid blue;
+  width: 50%;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

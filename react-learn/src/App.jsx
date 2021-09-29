@@ -2,6 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 import FirstCompo from './FirsComponent';
 import React from 'react';
+import * as headingObject from './components/Heading';
+
+// * => import all of them as an object 
 // jsx 
 
 function App() {
@@ -14,6 +17,12 @@ function App() {
 
   var fname = "Divyansh";
   var lname = "Dixit";
+
+  console.log(headingObject.x)
+
+  var {HeadingComponent, x, g, add} = headingObject;
+
+  var {fname, lname} = headingObject.x;
 
   return (
     
@@ -29,6 +38,13 @@ function App() {
     // ternary operator ? : (condition) ? 'true' : 'else'
     
     <>
+    
+    <div className="calc"> 
+        <h1> { `Addition of 10, 20 is ${add(10,20)} `} </h1>
+    </div>
+
+      < headingObject.HeadingComponent/>
+    {fname} {lname}
     <div>
             <h1 style={headingStyle}> Heading </h1>
             <p style={{color:'blue'}}>  My full name is {fname} {lname}  </p>
