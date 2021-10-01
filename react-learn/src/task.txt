@@ -12,3 +12,21 @@
   // simple calculator app:
 
   add(4,5), sub(), mul(), division(), power()
+
+
+  // Restraunt:
+
+app.js
+  <Restraunt name ="1" link="", img=""/>
+  <Restraunt/>
+  <Restraunt/>
+  
+
+  Restraunt.jsx(parent)
+
+  name
+  link <RestrauntImage/>
+
+  RestrauntImage(child)
+  
+  <img src=""/>

@@ -2,7 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import FirstCompo from './FirsComponent';
 import React from 'react';
+import {Add} from './components/Calculator';
 import * as headingObject from './components/Heading';
+import * as calcObject from './components/Calculator';
+import {Card} from './components/CardComponent';
 
 // * => import all of them as an object 
 // jsx 
@@ -14,31 +17,27 @@ function App() {
       textAlign:'center',
       textDecoration:'underline'
   }
+  var cardObj = {
+    card_no:1,
+    name:'First Card'
+  }
 
   var fname = "Divyansh";
   var lname = "Dixit";
 
   console.log(headingObject.x)
 
+// obeject destructruing :
   var {HeadingComponent, x, g, add} = headingObject;
 
+  // var {Add} = calcObject;
   var {fname, lname} = headingObject.x;
 
   return (
     
-    // javascript extension jsx
-    // render multiple html element , wrap up in one parent element
-    // use <React.Fragment> </React.Fragment>, <> </>, []
-
-    // we can't use JS statement inside jsx, use only expression using {}
-
-    // 'my name is ' + name + ' my age is ' + age
-    // template literal es6
-
-    // ternary operator ? : (condition) ? 'true' : 'else'
-    
     <>
-    
+    <Add x={10} y="20" z="4"/>
+    {/* {Add(1,2)} */}
     <div className="calc"> 
         <h1> { `Addition of 10, 20 is ${add(10,20)} `} </h1>
     </div>
@@ -57,9 +56,29 @@ function App() {
     <div>
             <h1 style={headingStyle}> Heading </h1>
         
-    </div>    
-</>
+    </div> 
+
+    <Card title={cardObj} key="1" description="Card description" link="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" imgTitle="Tree"/>   
+    <Card title={cardObj} key="2" description="Card description1" link="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" imgTitle="Tree"/>   
+    
+
+    {/* <Card1 title="Card title one" description="Card description one" link="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" imgTitle="Tree"/>    */}
+    
+  </>
+
+
     /*
+    // javascript extension jsx
+    // render multiple html element , wrap up in one parent element
+    // use <React.Fragment> </React.Fragment>, <> </>, []
+
+    // we can't use JS statement inside jsx, use only expression using {}
+
+    // 'my name is ' + name + ' my age is ' + age
+    // template literal es6
+
+    // ternary operator ? : (condition) ? 'true' : 'else'
+    
     // js 
     var h1 = document.createElement('h1');
     h1.innerHTML = 'Hello world!';

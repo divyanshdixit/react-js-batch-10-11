@@ -24,3 +24,12 @@ npm version => npm -v ( should be more than 5 )
 cd react-learn
 
 npm start
+
+
+// to get the pull in master
+
+git pull
+
+// to get pull in your dev branch
+
+git pull origin main 
