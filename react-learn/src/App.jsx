@@ -6,6 +6,8 @@ import {Add} from './components/Calculator';
 import * as headingObject from './components/Heading';
 import * as calcObject from './components/Calculator';
 import {Card} from './components/CardComponent';
+import ShowCategory from './components/ConditionalComponent';
+import FirstClassComponent from './components/FirstClassCompo';
 
 // * => import all of them as an object 
 // jsx 
@@ -64,6 +66,10 @@ function App() {
 
     {/* <Card1 title="Card title one" description="Card description one" link="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg" imgTitle="Tree"/>    */}
     
+    <ShowCategory/>
+
+    <FirstClassComponent/>
+    <FirstClassComponent roll_no='101' city="kanpur"/>
   </>
 
 
