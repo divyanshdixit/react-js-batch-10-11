@@ -28,7 +28,7 @@ class StateWithConstructor extends Component {
             <div>
             <input type="text" onChange={(e)=> console.log(e.target, e.target.value, e)}/>
             <button type="button" data-color="red" value="red" onClick={(e) => { console.log(e.target.dataset.color, e.target.value); this.setState({color:e.target.value})}}> Red Color </button>
-            <button type="button" color="blue" value="blue" onClick={(e) => this.setState({color:e.target.value})}> Green Color </button>
+            <button type="button" color="blue" value="blue" onClick={(e) => this.setState({color:e.target.value, title:''})}> Green Color </button>
                 <h1 style={{color:this.state.color}}> Class component with constructor function and props and state - {this.state.title} {this.state.roll_no}</h1>
             </div>
         )

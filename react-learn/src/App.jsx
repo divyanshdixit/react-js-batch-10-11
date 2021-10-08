@@ -9,6 +9,7 @@ import {Card} from './components/CardComponent';
 import ShowCategory from './components/ConditionalComponent';
 import FirstClassComponent from './components/FirstClassCompo';
 import StateWithConstructor from './components/StateWithConstructor';
+import ComponentWithHook from './components/Hooks/UseStateHookFunction';
 
 // * => import all of them as an object 
 // jsx 
@@ -72,6 +73,8 @@ function App() {
     <FirstClassComponent/>
     <FirstClassComponent roll_no='101' city="kanpur"/>
     <StateWithConstructor roll_no="100"/>
+
+    <ComponentWithHook/>
   </>
 
 

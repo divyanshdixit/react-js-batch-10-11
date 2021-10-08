@@ -30,3 +30,19 @@ app.js
   RestrauntImage(child)
   
   <img src=""/>
+
+index
+
+app
+
+// prop drilling
+
+A => prop
+  C 
+    E
+      F => prop
+        G console.log()
+
+B
+
+
