@@ -31,18 +31,6 @@ app.js
   
   <img src=""/>
 
-index
-
-app
-
-// prop drilling
-
-A => prop
-  C 
-    E
-      F => prop
-        G console.log()
-
-B
 
 
+  // digitalClock, clickCounter

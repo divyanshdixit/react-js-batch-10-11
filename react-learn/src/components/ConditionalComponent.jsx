@@ -1,6 +1,7 @@
 import Category from "./Category";
 
 /*
+statement
 if(){
 
 }else if(){
@@ -11,6 +12,7 @@ if(){
 
 }
 
+expression
 (cond1) ? ' ' : ( (cond2) ? '' : '' )
 */
 
@@ -29,6 +31,7 @@ const ShowCategory = () => {
     }else{
         
         return (
+            // only expression can be used
         <>
             {(subCategory == 'egg') ? <Category main="Non-Veg" sub="egg"/> : <Category main="Non-Veg" sub="panner"/>}
 

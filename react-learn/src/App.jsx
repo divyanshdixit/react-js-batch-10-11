@@ -10,6 +10,7 @@ import ShowCategory from './components/ConditionalComponent';
 import FirstClassComponent from './components/FirstClassCompo';
 import StateWithConstructor from './components/StateWithConstructor';
 import ComponentWithHook from './components/Hooks/UseStateHookFunction';
+import HandlingEventss from './components/handlingEvents';
 
 // * => import all of them as an object 
 // jsx 
@@ -75,6 +76,7 @@ function App() {
     <StateWithConstructor roll_no="100"/>
 
     <ComponentWithHook/>
+    <HandlingEventss/>
   </>
 
 
